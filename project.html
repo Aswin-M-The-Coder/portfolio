@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div>
+        <a href="#" class="logo">Portfolio</a>
+            </div>
+        <div class="nav-links" id="navLinks">
+            <i class='bx bxs-x-circle' onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="#home" id="pages">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work-experience">Internship Experience</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#Certificates">Certificates</a></li>
+                <li><a href="Aswin_M_Resume.pdf" class="resume" target="_blank">Resume</a></li>
+            </ul>
+        </div>
+        <i class='bx bx-menu' onclick="showmenu()"></i>
+<!--        <nav class="navbar">
+            <a href="#home" id="pages">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Skills</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>-->
+        </nav>
+    </header>
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <b style="color: #00ccff;" class="heading">Projects</b></h2>
+        <p class="know">(hover or click to Brief)</p>
+        <div class="portfolio-container">
+
+           
+          <div class="portfolio-box fox">
+            <img src="images/Automation.png" alt="">
+            <div class="portfolio-layer">
+                <h4>B.A.T.O.S 3.0</h4>
+                <p>Developed a business automation system inspired by SAP and PLM, with streamlined workflows and enhanced functionalities.</p>
+                <a href="https://github.com/Aswin-M-The-Coder/Batos_3.0">Github <i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+
+            <div class="portfolio-box fox">
+                <img src="images/autoger.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>AutoGer</h4>
+                    <p>Automation tool made for complete automation of blogging process from content creation to uploading in blogger website.</p>
+                    <a href="https://github.com/Aswin-M-The-Coder/Automate-blogger">Github <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box fox">
+                <img src="images/Virtual-Assistant.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Virtual Ruby 2.0</h4>
+                    <p>Elevate your tasks with my AI-powered virtual assistant, powered by the UneeQ API for personalized, human-like assistance.</p>
+                    <a href="https://github.com/Aswin-M-The-Coder/virtual-Ruby-2.0">Github <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box fox">
+                <img src="images/flypro3.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Flypro</h4>
+                    <p>Bid and book your private jet effortlessly with our exclusive auction protocol. Experience luxury travel tailored to your preferences.</p>
+                    <a href="https://github.com/Aswin-M-The-Coder/flypro">Github <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box fox">
+                <img src="images/front-web.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Frontend Website</h4>
+                    <p>Challenge yourself and level up your CTF skills with my interactive Frontend CTF website.</p>
+                    <a href="http://talosctf.netlify.app" target="_blank">Website<i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box fox">
+                <img src="images/ruby2.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Ruby </h4>
+                    <p>As part of my department symposium, I developed a virtual assistant 
+                        to help attendees navigate the event and answer their questions.</p>
+                    <a href="https://github.com/Aswin-M-The-Coder/Ruby-The-Virtual-Assistant">github<i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box fox">
+                <img src="images/portfolio.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Portfolio Website</h4>
+                    <p>Experience my professional journey and accomplishments showcased through my elegantly designed portfolio website.</p>
+                    <a href="index.html">Website<i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box fox">
+                <img src="images/library.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Library System</h4>
+                    <p>
+                        Introducing our Library System: Seamlessly manage your library's resources with our integrated frontend and backend solution.</p>
+                    <a href="https://library-system-ebon-alpha.vercel.app/">Website<i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box fox">
+                <img src="images/employee.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Employee System</h4>
+                    <p>Effortlessly manage your workforce with a seamless blend of intuitive frontend design and powerful backend infrastructure.</p>
+                    <a href="https://github.com/Aswin-M-The-Coder/employee_system">Github<i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu(){
+            navLinks.style.right = "0";
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
